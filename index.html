@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guia completo de turismo, serviços e mapa interativo de Iporanga SP e PETAR." />
+  <title>Iporanga SP - PETAR</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-sA+e2he0FQ9oPT6IyH6ckKd3FvYVt7pPhDZ+Im9F1hQ=" crossorigin="" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" aria-label="Navegação principal">
+      <div class="logo">Iporanga SP - PETAR</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#turistas" class="nav-link">Turistas</a></li>
+        <li><a href="#moradores" class="nav-link">Moradores</a></li>
+        <li><a href="#mapa" class="nav-link">Mapa</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section home-section" tabindex="0">
+      <h1>Bem-vindo ao Iporanga SP - PETAR</h1>
+      <p>Seu guia completo para turismo e serviços locais.</p>
+    </section>
+
+    <section id="turistas" class="section" tabindex="0">
+      <h2>Para Turistas</h2>
+      <ul>
+        <li>Mapa interativo com atrações e hospedagens</li>
+        <li>Agendamento online em hotéis e pousadas</li>
+        <li>Roteiros personalizados de ecoturismo</li>
+        <li>Guia de comércios e restaurantes</li>
+      </ul>
+    </section>
+
+    <section id="moradores" class="section" tabindex="0">
+      <h2>Para Moradores</h2>
+      <ul>
+        <li>Diretório de comércios locais com promoções</li>
+        <li>Serviços de entrega (comida, mercado, farmácia)</li>
+        <li>Notícias e eventos da cidade</li>
+        <li>Espaço para avaliações e recomendações</li>
+      </ul>
+    </section>
+
+    <section id="mapa" class="section map-section" tabindex="0">
+      <h2>Mapa Interativo</h2>
+      <div id="map" style="height: 400px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);"></div>
+    </section>
+
+    <section id="contato" class="section" tabindex="0">
+      <h2>Contato</h2>
+      <form id="contactForm" autocomplete="on" aria-label="Formulário de contato">
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required aria-required="true" /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required aria-required="true" /><br />
+
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem" name="mensagem" required aria-required="true"></textarea><br />
+
+        <button type="submit" aria-label="Enviar mensagem">Enviar</button>
+      </form>
+      <p id="formStatus" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Iporanga SP - PETAR. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-o9N1jE+PnuD5wsbVzB72vsFT9HzNqQY1QZDKv4y0TkM=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
